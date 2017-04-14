@@ -9,18 +9,18 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```java
-        @Override
-        public void run() {
-            try {
-                String line = reader.readLine();
-                while (line != null) {
-                    output.add(line);
-                    line = reader.readLine();
-                }
-            } catch (IOException ex) {
-                throw new RuntimeException("make failed with error code " + ex.toString());
-            }
+@Override
+public void run() {
+    try {
+        String line = reader.readLine();
+        while (line != null) {
+            output.add(line);
+            line = reader.readLine();
         }
+    } catch (IOException ex) {
+        throw new RuntimeException("make failed with error code " + ex.toString());
+    }
+}
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
